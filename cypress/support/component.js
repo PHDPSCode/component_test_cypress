@@ -16,6 +16,8 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+import './add_card_commands/add_card_commands'
+
 import '../../src/index.css'
 
 import { mount } from 'cypress/react'
