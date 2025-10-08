@@ -1,4 +1,4 @@
-cardify-dev
+
 # Cypress Component Testing Portfolio (EN_US)
 
 ![Cypress](https://img.shields.io/badge/Cypress-%3E13.0-blue?logo=cypress)
