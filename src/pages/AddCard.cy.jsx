@@ -44,19 +44,19 @@ describe("Validates <AddCard /> page", () => {
       .and("have.text", "Cartão cadastrado com sucesso!");
   });
 
-  it("Validates new credit card registration with invalide name", () => {
+  it("Validates new credit card registration with invalid name", () => {
     cy.fillCardForm({...myCard, holderName: "P"});
     cy.submitCardForm();
     cy.alertErrorMessage("Nome deve ter pelo menos 2 caracteres");
   });
 
-  it("Validates new credit card registration with invalide expiration date", () => {
+  it("Validates new credit card registration with invalid expiration date", () => {
     cy.fillCardForm({...myCard, expirationDate: "13/31"});
     cy.submitCardForm();
     cy.alertErrorMessage("Data de expiração inválida ou vencida");
   });
 
-  it("Validates new credit card registration with invalide cvv", () => {
+  it("Validates new credit card registration with invalid cvv", () => {
     cy.fillCardForm({...myCard, cvv: "1"});
     cy.submitCardForm();
     cy.alertErrorMessage("CVV deve ter 3 ou 4 dígitos");
